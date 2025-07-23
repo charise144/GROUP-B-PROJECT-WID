@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-white">
+      <div>
+        <p class="text-red-600 text-xl font-mono p-10">ABOUT</p>
+        <hr class="border-t-2 border-red-500 w-full mt-2" />
+      </div>
+      <div class="flex justify-center items-center space-x-4">
+        <div class="w-[600px] mt-3">
+          <p class="text-3xl text-red-600 font-semibold mb-2 pb-10">
+            About Our Food
+          </p>
+          <hr class="border-t-4 border-gray-400 w-24 mt-2 pb-10" />
+          <p class="text-lg text-gray-800">
+            Proin eget tortor risus. Cras ultricies ligula sed magna dictum
+            porta. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet
+            elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
+            posuere blandit. Quisque velit nisi, pretium ut lacinia in,
+            elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh
+            pulvinar a. Curabitur id dui posuere blandit. Proin eget tortor
+            risus. Cras ultricies ligula sed magna dictum porta. Nulla porttitor
+            accumsan tincidunt. Nullare porttitor accumsan tincidunt.
+          </p>
+          <div class="flex space-x-6 items-center">
+            <!-- Checkbox 1 -->
+            <div class="flex items-center space-x-2 mt-4">
+              <img
+                src="/icons8-checked-checkbox-48 (1).png"
+                alt="checkbox"
+                class="w-7 h-7 bg-red-800 transition-transform duration-300 hover:scale-125"
+              />
+              <span class="text-gray-700">Delicious</span>
+            </div>
+
+            <!-- Checkbox 2 -->
+            <div class="flex items-center space-x-2 mt-4">
+              <img
+                src="/icons8-checked-checkbox-48 (1).png"
+                alt="checkbox"
+                class="w-7 h-7 bg-red-800 transition-transform duration-300 hover:scale-125"
+              />
+              <span class="text-gray-700">Yummy</span>
+            </div>
+
+            <!-- Checkbox 3 -->
+            <div class="flex items-center space-x-2 mt-4">
+              <img
+                src="/icons8-checked-checkbox-48 (1).png"
+                alt="checkbox"
+                class="w-7 h-7 bg-red-800 transition-transform duration-300 hover:scale-125"
+              />
+              <span class="text-gray-700">Healthy</span>
+            </div>
+
+            <!-- Checkbox 4 -->
+            <div class="flex items-center space-x-2 mt-4">
+              <img
+                src="/icons8-checked-checkbox-48 (1).png"
+                alt="checkbox"
+                class="w-7 h-7 bg-red-800 transition-transform duration-300 hover:scale-125"
+              />
+              <span class="text-gray-700">Tasty</span>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/istockphoto-2176119032-1024x1024.jpg"
+          alt="Pizzza"
+          class="rounded-2xl w-[600px] h-96 mt-4"
+        />
+      </div>
+
+      <div class="relative h-96 w-full overflow-hidden mt-10">
+        <!-- Background Image -->
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="
+            background-image: url('./istockphoto-2176119032-1024x1024.jpg');
+          "
+        >
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <!-- dark overlay -->
+        </div>
+
+        <!-- Stats Content -->
+        <div
+          class="relative z-10 flex justify-center items-center h-full gap-30 px-4"
+        >
+          <!-- Stat 1 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-red-600 text-white rounded-full w-50 h-20 flex items-center justify-center text-2xl font-bold"
+            >
+              15+
+            </div>
+            <div class="text-white mt-2 text-sm">Years of experience</div>
+          </div>
+          <!-- Stat 2 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-red-600 text-white rounded-full w-50 h-20 flex items-center justify-center text-2xl font-bold"
+            >
+              43
+            </div>
+            <div class="text-white mt-2 text-sm">Branches in country</div>
+          </div>
+          <!-- Stat 3 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-red-600 text-white rounded-full w-50 h-20 flex items-center justify-center text-2xl font-bold"
+            >
+              65K
+            </div>
+            <div class="text-white mt-2 text-sm">Order delivered</div>
+          </div>
+          <!-- Stat 4 -->
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-red-600 text-white rounded-full w-50 h-20 flex items-center justify-center text-2xl font-bold"
+            >
+              37K
+            </div>
+            <div class="text-white mt-2 text-sm">Pizza served</div>
+          </div>
+        </div>
+      </div>
+      <section class="py-16 bg-white">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-bold text-red-600">Meet Our Chefs</h2>
+          <div class="w-24 h-1 bg-red-600 mx-auto mt-2"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 max-w-7xl mx-auto"
+        >
+          <!-- Chef 1 -->
+          <div class="rounded overflow-hidden shadow-lg">
+            <img
+              src="your-image-1.jpg"
+              alt="Jane Carter"
+              class="w-full h-72 object-cover"
+            />
+            <div class="bg-red-600 text-white text-center py-4">
+              <h3 class="text-xl font-bold">Jane Carter</h3>
+              <p class="text-sm">Chef</p>
+            </div>
+          </div>
+
+          <!-- Chef 2 -->
+          <div class="rounded overflow-hidden shadow-lg">
+            <img
+              src="your-image-2.jpg"
+              alt="Mike Smith"
+              class="w-full h-72 object-cover"
+            />
+            <div class="bg-red-600 text-white text-center py-4">
+              <h3 class="text-xl font-bold">Mike Smith</h3>
+              <p class="text-sm">Head of Chefs</p>
+            </div>
+          </div>
+
+          <!-- Chef 3 -->
+          <div class="rounded overflow-hidden shadow-lg">
+            <img
+              src="your-image-3.jpg"
+              alt="David Someone"
+              class="w-full h-72 object-cover"
+            />
+            <div class="bg-red-600 text-white text-center py-4">
+              <h3 class="text-xl font-bold">David Someone</h3>
+              <p class="text-sm">Chef</p>
+            </div>
+          </div>
+
+          <!-- Chef 4 -->
+          <div class="rounded overflow-hidden shadow-lg">
+            <img
+              src="your-image-4.jpg"
+              alt="John Carter"
+              class="w-full h-72 object-cover"
+            />
+            <div class="bg-red-600 text-white text-center py-4">
+              <h3 class="text-xl font-bold">John Carter</h3>
+              <p class="text-sm">Chef</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
