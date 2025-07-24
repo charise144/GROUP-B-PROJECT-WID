@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Hero Section -->
+   <section class="bg-[url(/Img/bug.jpeg)] bg-cover bg-center  bg-linear-gradient(to bottom left, var(--tw-gradient-stops)) text-white py-12 px-4 text-center">
+    <h1 class="text-4xl font-bold text-red-600 mb-4">Do you have any questions?</h1>
+    <p class="text-lg max-w-2xl mx-auto">Please read questions below and if you cannot find your answer, send us your question. We will answer as soon as possible.</p>
+  </section>
+
+  <!-- Main Section -->
+  <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
+    
+    <!-- Left Column: FAQs -->
+    <div>
+      <!-- Section Title -->
+      <div class="flex items-center gap-2 mb-6">
+        <span class="text-xl">📄</span>
+        <h2 class="text-2xl font-bold text-red-600">F.A.Qs</h2>
+      </div>
+
+      <!-- FAQ Accordion using <details> -->
+      <div class="space-y-4">
+        <details class="border rounded-md">
+          <summary class="cursor-pointer p-4 bg-black text-white font-semibold">What types of burgers do you offer?</summary>
+          <div class="p-4 text-gray-600 bg-white">
+            We offer a wide range of burgers including beef, chicken, turkey, veggie, and plant-based options. Check our menu page for full details.
+          </div>
+        </details>
+
+        <details class="border rounded-md">
+          <summary class="cursor-pointer p-4 font-medium">Do you offer meal combos?</summary>
+          <div class="p-4 text-gray-600 bg-white">
+            Yes! Our meal combos include a burger, fries, and a drink at a discounted price. We also have family packs and special deals.
+          </div>
+        </details>
+
+        <details class="border rounded-md">
+          <summary class="cursor-pointer p-4 font-medium">Can I customize my burger?</summary>
+          <div class="p-4 text-gray-600 bg-white">
+            Absolutely! You can build your own burger by choosing your bun, protein, toppings, sauces, and extras. Just let us know when ordering.
+          </div>
+        </details>
+
+        <details class="border rounded-md">
+          <summary class="cursor-pointer p-4 font-medium">Do you have vegan or vegetarian options?</summary>
+          <div class="p-4 text-gray-600 bg-white">
+            Yes, we do! Our Veggie Delight and Plant Power burgers are 100% vegetarian/vegan-friendly.
+          </div>
+        </details>
+
+        <details class="border rounded-md">
+          <summary class="cursor-pointer p-4 font-medium">Are your buns gluten-free?</summary>
+          <div class="p-4 text-gray-600 bg-white">
+            We offer gluten-free bun options. Please notify us when ordering so we can prepare your meal safely.
+          </div>
+        </details>
+      </div>
+
+      <!-- Other Questions Section -->
+      <div class="mt-12">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xl">📄</span>
+          <h2 class="text-2xl font-bold text-red-600">Other Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+          <details class="border rounded-md">
+            <summary class="cursor-pointer p-4 font-medium">What allergens are in your food?</summary>
+            <div class="p-4 text-gray-600 bg-white">Some of our products may contain or come into contact with common allergens such as peanuts, tree nuts, dairy, gluten, eggs, or soy. Please see our allergen guide or ask our staff for details.</div>
+          </details>
+
+          <details class="border rounded-md">
+            <summary class="cursor-pointer p-4 font-medium">Do you offer delivery services?</summary>
+            <div class="p-4 text-gray-600 bg-white">Yes! We deliver through [Uber Eats, DoorDash, and Grubhub] (or insert local delivery partners). You can also place an order directly from our website.</div>
+          </details>
+
+          <details class="border rounded-md">
+            <summary class="cursor-pointer p-4 font-medium">Do you accept online orders for pickup?</summary>
+            <div class="p-4 text-gray-600 bg-white">Yes, you can order online and select the pickup option at checkout. We’ll have your order hot and ready when you arrive.</div>
+          </details>
+
+          <details class="border rounded-md">
+            <summary class="cursor-pointer p-4 font-medium">What are your opening hours?</summary>
+            <div class="p-4 text-gray-600 bg-white">We are open daily from 11:00 AM to 10:00 PM, including weekends and public holidays.</div>
+          </details>
+
+          <details class="border rounded-md">
+            <summary class="cursor-pointer p-4 font-medium">How can I contact customer service?</summary>
+            <div class="p-4 text-gray-600 bg-white">You can reach us via:📞 Call: [+234 8108505202]<br>📧 Email: [generouschisom14@gmail.com]</div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <div>
+      <div class="flex items-center gap-2 mb-6">
+        <span class="text-xl">💬</span>
+        <h2 class="text-2xl font-bold text-red-600">Ask Us</h2>
+      </div>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name *" class="w-full border rounded-md p-3" required>
+        <input type="email" placeholder="Your Email *" class="w-full border rounded-md p-3" required>
+        <input type="text" placeholder="Subject" class="w-full border rounded-md p-3">
+        <select class="w-full border rounded-md p-3">
+          <option>Business Department</option>
+          <option>Technical Support</option>
+          <option>Billing</option>
+        </select>
+        <textarea placeholder="Your Question" class="w-full border rounded-md p-3 h-32"></textarea>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700">Ask</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
